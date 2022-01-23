@@ -20,7 +20,7 @@ namespace Lesson_4
             {
                 for (int j = 0; j < Columns; j++)
                 {
-                    arr[i, j] = RandomNum.Next(100);
+                    arr[i, j] = RandomNum.Next();
                     Sum += arr[i, j];
                 }
             }
@@ -28,7 +28,7 @@ namespace Lesson_4
             {
                 for (int j = 0; j < Columns; j++)
                 {
-                    Console.Write($"{arr[i, j], 5}");
+                    Console.Write($"{arr[i, j], 15}");
                 }
                 Console.WriteLine();
             }
